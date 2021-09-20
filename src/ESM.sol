@@ -37,7 +37,7 @@ interface DenyLike {
 }
 
 contract ESM {
-    GemLike public immutable gem;   // collateral (MKR token)
+    GemLike public immutable gem;   // collateral (VDGT token)
     EndLike public immutable end;   // cage module
     address public immutable proxy; // Pause proxy
     uint256 public immutable min;   // minimum activation threshold [wad]

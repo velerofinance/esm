@@ -208,7 +208,7 @@ contract ESMTest is DSTest {
         assertEq(end.live(), 0);
     }
 
-    function testFail_deny_insufficient_mkr() public {
+    function testFail_deny_insufficient_vdgt() public {
         esm = new ESM(address(gem), address(end), pauseProxy, 10);
         vat.rely(address(esm));
         usr.callDeny(esm, address(vat));
